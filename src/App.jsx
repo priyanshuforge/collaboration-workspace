@@ -8,13 +8,13 @@ function App() {
   const editorRef = useRef(null);
 
   const [notes, setNotes] = useState(() => {
-    const savedNotes = localStorage.getItem("collabwork_notes");
+    const savedNotes = localStorage.getItem("collabwork_notes"); 
 
     if (savedNotes) {
-      return JSON.parse(savedNotes);
+      return JSON.parse(savedNotes); 
     }
 
-    return [
+    return [ 
       {
         id: 1,
         title: "Welcome to Workspace",
