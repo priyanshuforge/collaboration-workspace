@@ -8,7 +8,7 @@ function App() {
   const editorRef = useRef(null);
 
   const [notes, setNotes] = useState(() => {
-    const savedNotes = localStorage.getItem("collabwork_notes"); 
+    const savedNotes = localStorage.getItem("collabwork_notes");  
 
     if (savedNotes) {
       return JSON.parse(savedNotes); 
@@ -16,22 +16,22 @@ function App() {
 
     return [ 
       {
-        id: 1,
+        id: 1, 
         title: "Welcome to Workspace",
         content:
           "Start writing your ideas here. Create notes, format your text and collaborate with your team.",
-        updatedAt: "Just now",
+        updatedAt: "Just now", 
       },
     ];
   });
 
-  const [selectedNote, setSelectedNote] = useState(notes[0]);
+  const [selectedNote, setSelectedNote] = useState(notes[0]); 
 
   const [searchQuery, setSearchQuery] = useState("");
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSearch, setShowSearch] = useState(false); 
 
   useEffect(() => {
-    localStorage.setItem("collabwork_notes", JSON.stringify(notes));
+    localStorage.setItem("collabwork_notes", JSON.stringify(notes)); 
   }, [notes]);
 
   const createNote = () => {
