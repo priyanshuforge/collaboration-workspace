@@ -10,9 +10,9 @@ function Toolbar({ formatText, createHeading, createList }) {
       </button>
 
       <button
-        title="Italic"
+        title="Italic" 
         onMouseDown={(e) => e.preventDefault()}
-        onClick={() => formatText("italic")}
+        onClick={() => formatText("italic")} 
       >
         <i>I</i>
       </button>
@@ -20,7 +20,7 @@ function Toolbar({ formatText, createHeading, createList }) {
       <button
         title="Underline"
         onMouseDown={(e) => e.preventDefault()}
-        onClick={() => formatText("underline")}
+        onClick={() => formatText("underline")} 
       >
         <u>U</u>
       </button>
