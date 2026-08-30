@@ -1,22 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
-import Topbar from "./components/Topbar";
+import Topbar from "./components/Topbar"; 
 import "./App.css";
 
 function App() {
-  const editorRef = useRef(null);
+  const editorRef = useRef(null); 
 
   const [notes, setNotes] = useState(() => {
-    const savedNotes = localStorage.getItem("collabwork_notes");  
+    const savedNotes = localStorage.getItem("collabwork_notes");     
 
     if (savedNotes) {
-      return JSON.parse(savedNotes); 
+      return JSON.parse(savedNotes);  
     }
 
     return [ 
       {
-        id: 1, 
+        id: 1,  
         title: "Welcome to Workspace",
         content:
           "Start writing your ideas here. Create notes, format your text and collaborate with your team.",
