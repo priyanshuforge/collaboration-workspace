@@ -15,10 +15,10 @@ button,
 input,
 textarea {
   font-family: inherit;  
-}
+} 
 
 button {
-  cursor: pointer;
+  cursor: pointer; 
   border: none; 
 }
 
