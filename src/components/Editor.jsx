@@ -1,4 +1,4 @@
-import { FiSave } from "react-icons/fi";
+import { FiSave } from "react-icons/fi"; 
 import Toolbar from "./Toolbar";
 
 function Editor({
@@ -9,12 +9,12 @@ function Editor({
   createHeading,
   createList,
 }) {
-  if (!selectedNote) {
+  if (!selectedNote) { 
     return (
       <div className="editor-container">
         <div className="empty-state">
           <h2>No note selected</h2>
-          <p>Create a new note to get started.</p>
+          <p>Create a new note to get started.</p> 
         </div>
       </div>
     );
@@ -22,7 +22,7 @@ function Editor({
 
   return (
     <div className="editor-container">
-      {/* Editor Header */}
+      {/* Editor Header */} 
       <div className="editor-header">
         <input
           className="title-input"
