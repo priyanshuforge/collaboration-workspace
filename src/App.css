@@ -5,9 +5,9 @@
 }
 
 body { 
-  font-family:
-    Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;  
-  background: #f7f8fa;
+  font-family: 
+    Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;   
+  background: #f7f8fa; 
   color: #1f2937;
 } 
 
@@ -27,7 +27,7 @@ button {
 .app {
   display: flex;
   min-height: 100vh; 
-  background: #f7f8fa; 
+  background: #f7f8fa;  
 }
 
 /* SIDEBAR */
